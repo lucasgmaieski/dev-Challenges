@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 925px;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 110px;
+    padding-bottom: 100px;
+}
+
+.header .presentation {
+    justify-content: flex-end;
+    width: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding-left: 45px;
+    padding-right: 40px;
+    /* text-align: justify; */
+    
+}
+.header .presentation h2 {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.header .presentation p{
+    padding-right: 20px;
+}
+
+.header .title {
+    font-family: 'PT Serif', serif;
+    font-size: 36px;
+    font-weight: 700;
+    width: 50%;
+    
+}
+
+.container {
+    display: grid;
+    grid: "bill saba shae" 1fr
+          "skylah griff stan" 1fr
+          / 1fr 1fr 1fr;
+    gap: 25px 30px;
+}
+.container .item-1{
+    grid-area: bill;
+}
+.container .item-2{
+    grid-area: saba;
+    margin-top: 100px;
+}
+.container .item-3{
+    grid-area: shae;
+}
+.container .item-4{
+    grid-area: skylah;
+}
+.container .item-5{
+    grid-area: griff;
+    margin-top: 100px;
+}
+.container .item-6{
+    grid-area: stan;
+}
+.container .image-name img {
+    width: 240px;
+}
+.container .image-name h3 {
+    font-family: 'PT Serif', serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.container .item {
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.container .item > h4 {
+    font-family: 'PT Serif', serif;
+    font-size: 12px;
+    font-weight: 400;
+    writing-mode: vertical-lr;
+    padding-left: 10px;
+}
+
+.container .item .image-name h3 {
+    padding-top: 15px;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 115px;
+}
+.footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #A9A9A9;
+}
